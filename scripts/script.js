@@ -41,7 +41,7 @@ $(document).ready(function () {
                     table_row.append('<td>No description</td>');
                 }
                 table_row.append('<td>' + data[i].updated_at.slice(0, 10) + '</td>');
-                table_row.append('<td><a href=' + data[i].url + '><button class="link">link</button></a></td>');
+                table_row.append('<td><a target="_blank" href=' + data[i].url + '><button class="link">link</button></a></td>');
                 table.append(table_row);
                 rows = +1;
             }

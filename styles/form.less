@@ -2,6 +2,10 @@ form {
     display: flex;
     flex-direction: column;
     width: 50%;
+    box-sizing: border-box;
+    @media (max-width: 699px) {
+        width: 100%;
+    }
     padding: 10px;
     input {
         padding: 10px;

@@ -3,10 +3,13 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
-    -webkit-box-shadow: @shadow;
-    -moz-box-shadow: @shadow;
-    box-shadow: @shadow;
-    transition: all .3s ease-in-out;
+    transition: all .2s ease-in-out;
+    &:hover {
+        -webkit-box-shadow: @shadow;
+        -moz-box-shadow: @shadow;
+        box-shadow: @shadow;
+        transform: scale(1.05);
+    }
 }
 button.submit {
     padding: 10px;
