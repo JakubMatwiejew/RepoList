@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Repository List</title>
+    <link rel="stylesheet/less" type="text/css" href="styles/main.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>GET GitHub Repositories by user.</h1>
+    </header>    
+    <repos data-user="JakubMatwiejew" data-update="2020-05-01"></repos>
+    <repos data-user="devballteam" data-update="2019-05-01"></repos>
+    <div>
+      <form id="form">
+        <h2>Search for repositories</h2>
+        <label for="name">User name</label>
+        <input id="name" type="text">
+        <label for="updated_at">Updated after</label>
+        <input id="updated_at" type="date">
+        <button class="submit" type="submit">Search and add repos</button>
+      </form>
+      <span id="form-message"></span>
+    </div>
+  </body>
+</html>
